@@ -1,0 +1,111 @@
+.im2{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.quiz{
+   position:absolute;
+   top: 25%;
+   left: 20%;
+   border: 3px solid white;
+   background-color: rgba(149, 155, 184, 0.4);
+   border-radius: 20px;
+   height: 54%;
+   width: 60%;
+   overflow: hidden;
+}
+.two {
+    height: 34%;
+   margin-left: 25px;
+}
+.two p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width: 80%;
+    font-size:1.5em;
+    margin-top: 25px;
+}
+.two p:nth-child(2){
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+.btn2{
+    display: flex;
+}
+.three{
+    height:40%;
+}
+.ulli{
+    list-style: none;
+    color: white;
+}
+.btn2 button{
+    cursor: pointer;
+    background-color: rgba(149, 155, 184, 0.4);
+    border:1px solid white;
+    color: white;
+    border-radius: 15%;
+    padding: 10px 15px;
+    margin: 5px;
+}
+.btn2{
+    position: absolute;
+    left: 82%;
+    bottom: 87%;
+}
+.two{
+    height: 30%;
+}
+.ulli{
+    font-size:1.2em;
+   width: 50%;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(217,217,217);
+    color: black;
+    font-weight: 900;
+    margin: 5px;
+    padding: 20px 69px;
+    border-radius: 7%;
+}
+.ulli:active{
+    transform: scale(0.8);
+    animation-duration: 2s;
+    }
+.three {
+    display:grid;
+    justify-items: center;
+    grid-gap: 10px;
+ grid-template-areas: 'mek   erek'
+ 'erku chors';
+}
+.truetext{
+    background-color:rgba(132,255,9,0.4)
+}
+.false{
+    background-color: rgba(184, 10, 10,0.4);
+}
+.btn3{
+ color: white;
+ background-color: rgb(96,54,167);
+ border: none;
+ border-radius: 20%;
+ padding: 10px 15px;
+ margin: 0 0 95px 90%;
+ cursor: pointer;
+}
+.three ulli:nth-child(1){
+grid-area: 'mek';
+}
+.three ulli:nth-child(2){
+grid-area:'erku';
+}
+.three ulli:nth-child(3){
+grid-area:'erek';
+}
+.three ulli:nth-child(4){
+  grid-area:'chors';
+}

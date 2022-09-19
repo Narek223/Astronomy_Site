@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.star{   
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  width: 100vw;
+  height:100vh;
+}
+.one{
+    height:auto;
+}
+.one img{
+    object-fit:contain;
+}
+.ab{
+    color: white;
+    padding: 10px;
+    margin-left: 65px;
+    margin-bottom: 39px;
+}
+.ab p{
+    font-size: 1.5em;
+      word-spacing: 15px;
+    line-height: 55px;
+    font-weight: 400;
+}
+.ab h1:nth-child(1){
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 2.6em;
+}
+.one p:nth-child(1){   
+  color: white;
+  font-weight: 400;
+  font-size: 2em;
+  position: absolute;
+  bottom: 325px;
+   left: 15px;
+}

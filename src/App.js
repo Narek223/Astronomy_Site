@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, } from "react-router-dom";
+import {Home} from "./pages/homepage/Home";
+import {About_us} from './pages/About/About_us'
+import { Header } from './pages/header/Header';
+import {Sign} from './pages/signup/Sign';
+import {Log} from './pages/signup/Log';
+import {Page} from './pages/quiz/Page';
+import {Disc} from './pages/Discover/Disc';
 
-function App() {
+export default function App() {
+window.oncontextmenu=(()=>{
+  return false
+})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+   <Header/>
+  <Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/Discover' element={<Disc/>}/>
+  <Route path='/quiz' element={<Page/> }/>
+  <Route path='/about' element={<About_us />} />
+  <Route path='/sign' element={<Sign/> }/>
+  <Route path='/login' element={<Log/> }/>
+  </Routes>
     </div>
-  );
+  )
 }
-
-export default App;

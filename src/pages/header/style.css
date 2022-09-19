@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .logo{
+        display: flex;
+        align-content: stretch;
+        flex-direction: column;
+        width: 30vw;
+        cursor: pointer;
+    }
+    .logo h1{
+    color: white;
+    font-size: 2.3em;
+    font-weight:900;
+    }
+    .logo p{
+        color: white;
+    }
+      .btn1 ul{
+        display: flex;
+        width: 30vw;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .btn1 ul li:nth-child(4){
+        border: 1px solid rgb(255, 255, 255);
+        padding: 8px 3px 8px 3px;
+        border-radius: 26%;
+    }
+    .btn1 ul li{
+        color: white;
+        font-size: 1.2em;
+        cursor: pointer;
+        list-style: none;
+        margin: 20px 33px 20px 33px;
+        font-weight: 400;
+    }
+    .btn1 ul li:active{
+        color:blueviolet;
+    }
+    .btn1 a:nth-child(4){
+        border: 2px solid white;
+        border-radius: 24%;
+    }
