@@ -11,10 +11,12 @@ let [s,sets]=useState(1)
 let [score,setscore]=useState(0)
 let [tr,settr]=useState(false)
 let [click,setclick]=useState(false)
+let [cli,setcli]=useState(false)
 
 const next_question=()=>{
 setclick(false)
 settr(false)
+setcli(false)
 setstate(questions.length-1?state+1:0)
 sets(s+=1)
 setcount(count+=1)
@@ -34,7 +36,13 @@ const ans=(ind)=>{
   setclick(true)
   questions[count].correctanswer===ind?settr(true):settr(false)
  setscore( ind===questions[count].correctanswer?score+=1:score)
+if(ind===questions[count].correctanswer){
+settr(true)
+}else if(ind!==questions[count].correctanswer){
+settr(true)
 }
+}
+
  return (
     <div className='conteiner'>
         <img src={galaxy} className='im2'/>
@@ -53,7 +61,7 @@ const ans=(ind)=>{
      <div className='three'>
        {questions[count].answers.map((elem,index)=>{
         return (
-        <li key={index} onClick={()=>ans(index)}  className={`ulli ${questions[count].correctanswer===index && tr===true?'truetext':'' }` } disabled={tr?true :false} >{elem}</li> 
+        <li    key={index} onClick={()=>ans(index)}  className={`ulli ${questions[count].correctanswer===index && tr===true?'truetext':'' }` } disabled={!cli} >{elem}</li> 
         )
        })}
      </div>
