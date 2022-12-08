@@ -4,7 +4,7 @@ import im from "../../img/SpaceXDragon.png"
 import { questions } from './quiz'
 import {Page} from './Page'
 
-export  function Final({data,c,b}) {
+export   function Final({data,c,b}) {
 
   return ( 
     <div className='con'>

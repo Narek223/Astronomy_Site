@@ -21,6 +21,7 @@ setstate(questions.length-1?state+1:0)
 sets(s+=1)
 setcount(count+=1)
 }
+
 const previous_question=()=>{
   setclick(false)
   settr(false)
@@ -32,6 +33,7 @@ const previous_question=()=>{
     setcount(0) 
   }
 }
+
 const ans=(ind)=>{
   setclick(true)
   questions[count].correctanswer===ind?settr(true):settr(false)
@@ -46,15 +48,19 @@ settr(true)
  return (
     <div className='conteiner'>
         <img src={galaxy} className='im2'/>
-        { count>questions.length-1?(    
+        { count>questions.length-1 ?(    
      <Final data={score} c={count}  b={s}/>
           ):(
             <section className='quiz'>
+
         <div className='two'>
+
  <p>Question Number: {s}/{questions.length}</p> 
  <p>Question: {questions[state].question}</p>
           </div>
+     
           <div className='btn2'>  
+       
  <button onClick={previous_question} disabled='true'>Previous</button>
  <button onClick={next_question}disabled={!click}>Next</button>
  </div>

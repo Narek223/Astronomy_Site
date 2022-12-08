@@ -1,6 +1,6 @@
 import React from 'react';
 import './disc.css';
-import stars_2 from '../../img/photo-1464850598256-dac80286d6ca.webp';
+import stars_2 from '../../img/photo-1464850598256-dac80286d6ca.jpg';
 import site_1 from '../../img/1_1554887961-1024x518.jpg';
 import site_2 from '../../img/8_1554887948-1024x518.jpg';
 import site_3 from '../../img/34_1554887966-1024x518.jpg';

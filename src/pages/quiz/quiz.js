@@ -8,5 +8,15 @@ export const questions =[
     {question:'Which planet in the Solar System has the largest ocean?',answers:['Earth','Jupiter','Uranus','Neptune'],correctanswer:1},
     {question:'In what year was Pluto reclassified as a dwarf planet?',answers:[2006,2005,2004,2003],correctanswer:0},
     {question:"Which planet do the moons Operon and Titania belong to?",answers:['Uranus','Venus','Earth','Jupiter'],correctanswer:0},
-    {question:'What is the sun mainly made from?',answers:['Rock','Liquid Lava','Gas','Molten iron'],correctanswer:2}
+    {question:'What is the sun mainly made from?',answers:['Rock','Liquid Lava','Gas','Molten iron'],correctanswer:2},
+    {question:'How many days does Mercury take to revolve around the Sun?' ,answers:['100 days','88 days','60 days','102 days'],correctanswer:1},
+    {question:'Which of the following is not a jovian planet?',answers:['Mars','Jupiter','Saturn','Uranus'],correctanswer:0},
+    {question:'Titan is a satellite of',answers:['Mars','Jupiter','Saturn','Earth'],correctanswer:2},
+    {question:'Phobos and Deimos are satellites of',answers:['jupiter','Saturn','Venus','Mars'],correctanswer:3},
+    {question:'Which planet is also called the red planet?',answers:['Mars','Mercury','Venus','Saturn'],correctanswer:0},
+    {question:'Which planet is also called the Morning and Evening star?',answers:['Mars','Earth','Venus','Jupiter'],correctanswer:2},
+    {question:'The asteroid belt is located between?',answers:['Earth and Mars','Jupiter and Saturn','Venus and Earth','Mars and Jupiter'],correctanswer:3},
+    {question:'The shape of Milky way galaxy is ?',answers:['Round','Elleptical','Oval','Rectangular'],correctanswer:1},
+    {question:'The largest satellite of our solar system is ?',answers:['Deimos','Gyanemide','Titan','Phobos'],correctanswer:2},
+    {question:'The two planets that revolve anti-clockwise around the sun are?',answers:['Venus and Uranus','Mars and Jupiter','Saturn and Mercury','Earth and Mars'],correctanswer:0}
 ]
