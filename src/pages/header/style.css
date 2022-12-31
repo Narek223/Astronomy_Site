@@ -6,7 +6,7 @@
 }
 header{
     display: flex;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 10px;
     justify-content: space-around;
@@ -19,6 +19,9 @@ header{
         width: 30vw;
         cursor: pointer;
     }
+    .dis{
+        display: none;
+    }
     .logo h1{
     color: white;
     font-size: 2.3em;
@@ -29,7 +32,7 @@ header{
     }
       .btn1 ul{
         display: flex;
-        width: 30vw;
+        width: 38vw;
         align-items: center;
         justify-content: flex-end;
     }
@@ -40,16 +43,118 @@ header{
     }
     .btn1 ul li{
         color: white;
-        font-size: 1.2em;
+        font-size: 1.4em;
         cursor: pointer;
         list-style: none;
         margin: 20px 33px 20px 33px;
         font-weight: 400;
     }
-    .btn1 ul li:active{
-        color:blueviolet;
+    .btn1 ul li:hover{
+        color:rgb(79, 95, 170);
     }
-    .btn1 a:nth-child(4){
-        border: 2px solid white;
-        border-radius: 24%;
+      
+    
+    .respons{
+     display: none;
+        }
+        hr{
+           display: none;
+        }
+        .resp ul li{
+            display: block;      
+    }
+    @media screen and (max-width:1200px) {
+        header{
+            display: flex;
+            width: 100vw;
+            position: absolute;
+            top: 10px;
+            justify-content:space-around;
+           
+            }
+    }
+    @media screen and (max-width:600px){
+
+        .btn1 a:nth-child(4){
+           border: none;
+        }
+
+        .btn1 ul{
+         display: block;
+         margin-bottom: 10%;
+        }
+        .respons:has(.x){
+            transition: all 0.7s ease;
+            transform: rotateZ(-360deg);     
+    }
+        header .respons{
+                 width: 10%;
+                 display: block;
+                 margin-left: 90%;
+                 padding: 5px;
+                 padding-top: 10px;
+                 position: absolute;
+                 transition: all 0.7s ease; 
+          }
+    .resp hr{
+        display: block;
+    }
+    .btn5{
+        display: none;
+    }
+ 
+        .btn1 ul li{
+           display: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            list-style: none;
+            font-weight: 400;
+            text-align: center;
+         
+        }
+            .logo{
+                display: flex;
+                width: 80vw;
+                margin-right: 70px;
+                cursor: pointer;
+            }
+            .logo h1{
+                color: white;
+                font-size: 1.8em;
+                font-weight:900;
+                padding-top:10px ;
+                width: 5vw;
+                height: 10vw;
+                }
+                .logo p{
+                    display: none;
+                }
+        header{
+            position: relative;
+            display: flex;
+            background-color: rgba(58,72,135,0.9);
+            position: absolute;
+            top: 10px;
+            flex-direction: row-reverse;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: stretch;
+             margin-top: -3%;
+             z-index: 5;
+            
+            }
+            hr{
+                width: 100%;
+            }
+            .resp ul li{
+                display: block;
+                margin-top: 15px;           
+        }       
+    }
+ 
+    @media screen and (max-width:393px){
+.logo h1{
+    height: 15vw;
+}
     }

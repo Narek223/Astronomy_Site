@@ -1,4 +1,5 @@
 export const questions =[
+
     {question:'Who was the first person in space?',answers:['Yuri Gagarin','Tim Peake','Sunita Williams','Helen Sharman'],correctanswer:0},
     {question:'Which planet was the first to be successully visited by an spacecraft?',answers:['Mars','Venus','Jupiter','Mercury'],correctanswer:1},
     {question:'Which of these is not a constellation?',answers:['Crux','Grus','Poloris','Orion'],correctanswer:2},
@@ -18,5 +19,15 @@ export const questions =[
     {question:'The asteroid belt is located between?',answers:['Earth and Mars','Jupiter and Saturn','Venus and Earth','Mars and Jupiter'],correctanswer:3},
     {question:'The shape of Milky way galaxy is ?',answers:['Round','Elleptical','Oval','Rectangular'],correctanswer:1},
     {question:'The largest satellite of our solar system is ?',answers:['Deimos','Gyanemide','Titan','Phobos'],correctanswer:2},
-    {question:'The two planets that revolve anti-clockwise around the sun are?',answers:['Venus and Uranus','Mars and Jupiter','Saturn and Mercury','Earth and Mars'],correctanswer:0}
+    {question:'The two planets that revolve anti-clockwise around the sun are?',answers:['Venus and Uranus','Mars and Jupiter','Saturn and Mercury','Earth and Mars'],correctanswer:0},
+    {question:'Our Solar System is 4.6 billion years old, but how old is the Earth?',answers:['560 million years','1.3 billion years','2.6 billion years','4.5 billion years'],correctanswer:3},
+    {question:'Which country was the first to travel in space?',answers:['USA','Soviet Union','China','United Kingdom'],correctanswer:1},
+    {question:'Saturn is the planet with the most moons in the Solar System. How many moons does it have?',answers:[82,85,72,10],correctanswer:0},
+    {question:'When was the first extrasolar planet discovered',answers:['1995','1990','1992','1999'],correctanswer:2},
+    {question:'Which planet in the Solar System is furthest from the Sun?',answers:['Neptune','Uranus','Mercury','Jupiter'],correctanswer:0}
+  
 ]
+  questions.sort((a, b) => 0.5 - Math.random());
+  questions.length=20
+
+

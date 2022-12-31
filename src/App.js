@@ -11,7 +11,7 @@ import {Disc} from './pages/Discover/Disc';
 export default function App() {
   
 window.oncontextmenu=(()=>{
-  return false
+  return 
 })
 
   return (

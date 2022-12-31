@@ -100,3 +100,96 @@ font-weight:900;
     color: white;
     font-size: 1.5em;
 }
+
+@media screen  and (max-width:1200px){
+    .cls{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .reg button{
+        padding: 10px 60px 10px 60px;
+        margin-left: 65px;
+        font-size:small;
+        width: 55%;
+    }
+    .reg{ 
+       position: absolute;
+       bottom:18%;
+       left: 58%;    
+       height: 63%;
+       width: 35%;
+       padding: 10px 50px; 
+    }
+    .lo{
+        position: absolute;
+        top: 55%;
+        left:15%;
+        display: flex;
+        align-content: stretch;
+        flex-direction: column;
+        width: 30vw;
+        cursor: pointer;
+    }
+    .dh{
+        object-fit: cover;
+        position: absolute;
+        top: 30%;
+        left:15%
+    }
+
+}
+
+@media screen  and (max-width:600px){
+    .reg{   
+        position: absolute;
+       bottom:20%;
+       left: 20%;
+       height: 60%;
+       width: 68%; 
+    }
+    .lo{
+      display: none;
+    }
+    .dh{
+        display: none;
+    }
+}
+
+@media screen  and (max-width:450px){
+    .reg{
+        position: absolute;
+       bottom:15%;
+       left: 10%;
+       border: 3px solid white;
+       height: 63%;
+       width: 80%;
+    }
+    .lo{
+      display: none;
+    }
+    .dh{
+        display: none;
+    }
+    .reg button{
+        margin-left: 25px;
+        font-size:small;
+        width: 80%;
+        cursor: pointer;
+    }
+    .reg p{
+        color: white;
+        text-align: center;
+        font-size:0.8em;
+    }
+  
+}
+
+@media screen  and (max-width:393px){
+    .reg{
+       height: 60%;
+       width:90%;
+
+    }
+
+}

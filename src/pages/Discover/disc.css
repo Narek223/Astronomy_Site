@@ -1,66 +1,245 @@
 body{
     box-sizing: border-box;
+    height: auto;
 }
 .stars{
-width: 100vw;
-height: 100vh;
-object-fit: cover;
-display: inline;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;  
 }
-.conteiner_two h1{
-position: absolute;
-top:20%;
-left:35%;
-font-size:2em;
-}
+
 .mek{
+    height: auto;
     position: absolute;
-    top:40%;
-    left:6%;
+    top:30%;
+    left:20%;
     border: 1px solid white;
    background-color: rgba(149, 155, 184, 0.4);
    border-radius: 10px;
-   width: 25%;
+   width: 60%;
+   transition-duration: 1s;
 }
 .mek img{
-    width: 100%;
+    width: 70%;
+    height: 40%;
+    padding: 10px;
+    margin-left: 15%;
+    object-fit: cover;
 }
 .mek p{
-    color: white;
+
+    font-size: 25px;
 }
 .hr{
-    color: white;
+    color:white;
     text-decoration: none;
     font-size: 2em;
 }
-.erku{
+.button_two{
+    color: white;
+    display: block;
     position: absolute;
-    top:40%;
-    left:35%;
-    border: 1px solid white;
-    background-color: rgba(149, 155, 184, 0.4);
-    border-radius: 10px;
-    width: 30%;
-   height: 510px;
-   overflow: hidden;
-   text-overflow: ellipsis;
+    top: 55%;
+    left: 75%;
+    z-index: 3;
+    cursor: pointer;
+     background-color: rgba(149, 155, 184, 0.4);
+     border:1px solid white;
+     border-radius: 15%;
+     padding: 20px 20px;
+     margin: 5px;
 }
-.erku img {
-  width: 100%;
-}
-.ereq{
-    position: absolute;
-    top:40%;
-    left:68%;
-    border: 1px solid white;
-    background-color: rgba(149, 155, 184, 0.4);
-    border-radius: 10px;
-    font-size:1em;
-    width: 30%;
-    height: 510px;
-    overflow: hidden;
-}
-.ereq img{
-    width: 100%; 
+.button_one:active{
+    transform: scale(0.7);
+
+    transition-duration: 2s;
 }
 
+.button_two:active{
+    transform: scale(0.7);
+    transition-duration: 2s;
+    
+}
+.button_one{
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+     background-color: rgba(149, 155, 184, 0.4);
+     border:1px solid white;
+     border-radius: 15%;
+     padding: 20px 20px;
+     margin: 5px;    
+}
+
+@media screen and (max-width:1200px) {
+        .button_two{    
+            position: absolute;
+            top: 45%;
+            left: 73%;         
+        }
+        .button_one{   
+            position: absolute;
+            top: 45%;
+            left: 22%;
+           
+        }   
+        .mek{     
+            position: absolute;
+            top:25%;
+            left:20%;   
+        }
+
+        .stars{     
+            object-fit: cover;
+            height: 100vh;
+            }   
+            .mek p{
+
+                padding: 5px;
+                font-size: 20px;
+            }        
+}
+
+@media screen and (max-width:600px) {
+    .mek p{
+        color: white;
+        padding: 5px;
+        font-size: 21px;
+        margin-top: 3vh;
+    }
+    .mek img{
+        width: 80%;
+        height: 40%;
+        padding: 10px;
+        margin-left: 10%;
+    object-fit: cover;
+    }
+    .button_two{
+
+   position: absolute;
+   top: 45%;
+   left: 86%;
+   z-index: 3;
+    color: white;
+    padding: 20px 15px;
+    margin: 5px;
+    }
+    .button_one{
+        position: absolute;
+        top: 45%;
+        left: 7%;
+         color: white;
+         padding: 20px 15px;
+         margin: 5px;
+    }
+        .mek{
+            display: flex;
+            position: absolute;
+            top:25%;
+            left:6%; 
+           width: 90%;
+           flex-wrap: wrap;
+    flex-direction: row;
+        } 
+        .stars{
+            height: 100vh;
+            object-fit: cover;
+            }  
+}
+@media screen and (max-width:450px) {
+    .mek{
+        display: flex;
+        position: absolute;
+        top:28%;
+        left:6%;
+        border: 1px solid white;
+       background-color: rgba(149, 155, 184, 0.4);
+       border-radius: 10px;
+       width: 90%;
+       flex-wrap: wrap;
+flex-direction: row;
+    }
+    .mek p{
+        font-size: 18px;
+    }
+    .button_two{
+        display: block;
+           position: absolute;
+           top: 45%;
+           left: 86%;
+           z-index: 3;
+           cursor: pointer;
+            background-color: rgba(149, 155, 184, 0.4);
+            border:1px solid white;
+            color: white;
+            border-radius: 15%;
+            padding: 20px 15px;
+            margin: 5px;
+            }
+            .button_one{
+                display: block;
+                position: absolute;
+                top:45%;
+                left: 3%;
+                z-index: 3;
+                cursor: pointer;
+                 background-color: rgba(149, 155, 184, 0.4);
+                 border:1px solid white;
+                 color: white;
+                 border-radius: 15%;
+                 padding: 20px 15px;
+                 margin: 5px;
+            }
+                   .conteiner_two{
+                    overflow: hidden;
+                   }
+                   .stars{
+                    height: 100vh;
+                    object-fit: cover;
+                    }
+}
+
+@media screen and (max-width:393px) {
+    .mek img{
+        width: 90%;
+        height: 40%;
+        padding: 10px;
+        margin-left: 6%;
+    object-fit: cover;
+    }
+    .button_one{
+        display: block;
+        position: absolute;
+        top:42%;
+        left: 3%;
+    }
+        .button_two{
+            display: block;
+               position: absolute;
+               top: 42%;
+               left: 86%;
+        }
+    .mek{
+        position: absolute;
+        top:27%;
+        left:3%;  
+        width: 96vw;
+        
+    }
+    .mek p{
+        font-size: 18px;
+        margin-top: 3vh;
+     
+        width: 100vw;
+
+    }
+    .hr{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+}
