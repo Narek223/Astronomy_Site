@@ -154,7 +154,7 @@ body{
     .mek{
         display: flex;
         position: absolute;
-        top:28%;
+        top:25%;
         left:6%;
         border: 1px solid white;
        background-color: rgba(149, 155, 184, 0.4);
@@ -231,7 +231,7 @@ flex-direction: row;
         
     }
     .mek p{
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 3vh;
      
         width: 100vw;
@@ -241,5 +241,20 @@ flex-direction: row;
         color: white;
         text-decoration: none;
         font-size: 1.5em;
+    }
+}
+
+@media screen and (max-height:750px) {
+    .mek{
+        display: flex;
+        position: absolute;
+        top:22%;
+        left:6%;
+        border: 1px solid white;
+       background-color: rgba(149, 155, 184, 0.4);
+       border-radius: 10px;
+       width: 92%;
+       flex-wrap: wrap;
+flex-direction: row;
     }
 }

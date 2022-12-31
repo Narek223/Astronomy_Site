@@ -67,11 +67,14 @@
     margin: 5px;
     padding: 20px 69px;
     border-radius: 7%;
+  
 }
 .ulli:active{
     transform: scale(0.8);
-    animation-duration: 2s;
+    animation-duration: 3s;
+    transition: all 0.7s ease;
     }
+
 .three {
     display:grid;
     justify-items: center;
@@ -182,7 +185,7 @@ grid-area:'erek';
         border-radius: 6%;
     }
     .two {
-        height: 28%;
+        height: 38%;
        margin-left: 25px;
     }
     .two p:nth-child(1){
@@ -205,6 +208,7 @@ grid-area:'erek';
         position:absolute;
         top: 25%;
         left: 6%;
+   
         height: 68%;
         width: 90%;
         overflow: hidden;
@@ -221,11 +225,12 @@ grid-area:'erek';
         bottom: 90%;
     }
     .two {
-   height: 38%;
+   height: 39%;
        margin-left: 25px;
     }
 }
 @media screen and (max-width:393px) {
+  
     .btn2{
         position: absolute;
         left: 50%;
@@ -238,8 +243,29 @@ grid-area:'erek';
         border: 3px solid white;
         background-color: rgba(149, 155, 184, 0.4);
         border-radius: 20px;
-        height: 77%;
+        height: 75%;
         width: 95vw;
         overflow: hidden;
      }
+}
+
+
+@media screen and (max-height:750px) {
+    .btn2{
+        position: absolute;
+        left: 50%;
+        bottom: 90%;
+    }
+    .quiz{
+        position:absolute;
+        top: 15%;
+        left: 8%;
+        border: 3px solid white;
+        background-color: rgba(149, 155, 184, 0.4);
+        border-radius: 20px;
+        height: 82%;
+        width: 90vw;
+        overflow: hidden;
+     }
+
 }

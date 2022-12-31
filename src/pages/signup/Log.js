@@ -53,13 +53,13 @@ return(
 <section className='log'>
   <div className='login'>
   <p className='account'>You don't have an account?<Link to='/sign' style={{  color:'rgb( 212,124,103)',textDecoration:'none'  }}> <span className='registr'>Registreition</span> </Link></p><br/>
-{formik.errors.pass && formik.touched.pass || formik.errors.email && formik.touched.email ? <p >Incorrect email or password.</p> : null}<br/>
+{formik.errors.pass && formik.touched.pass || formik.errors.email && formik.touched.email ? <p className='error'>Incorrect email or password.</p> : null}<br/>
 <label htmlFor='email'>Email</label><br/>
 <Field type='email' name='email'   />
-<ErrorMessage name='email' component='p' /><br/>
+<ErrorMessage name='email' component='p'  className="error"/><br/>
 <label htmlFor='pass'>Password</label><br/>
 <Field type='password' name='password'/>
-<ErrorMessage name='password' component='p' />
+<ErrorMessage name='password' component='p'  className="error" />
 <button type='submit'  disabled={!formik.isValid} onClick={()=>{setstate(user);login()}}>Sign in</button>
 </div>
 </section>

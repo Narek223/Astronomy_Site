@@ -75,16 +75,16 @@ return(
   <div className='reg'>
   <h1>Get Started</h1><br/>
   <p>Already have on Account ?   <Link to='/login' style={{  color:'rgb( 212,124,103)',textDecoration:'none'  }}> <span>Log in</span> </Link></p><br/>
-  {formik.errors.pass && formik.touched.pass || formik.errors.email && formik.touched.email ? <p >Incorrect email or password.</p> : null}
+  {formik.errors.pass && formik.touched.pass || formik.errors.email && formik.touched.email ? <p  className='error'>Incorrect email or password.</p> : null}
 <label htmlFor='name'>Name</label>
 <Field type='text' name='name'/>
-<ErrorMessage name='name' component='p' />
+<ErrorMessage name='name' component='p'  className="error" />
 <label htmlFor='email'>Email</label>
 <Field type='email' name='email'   />
-<ErrorMessage name='email' component='p' />
+<ErrorMessage name='email' component='p'   className="error"/>
 <label htmlFor='password'>Password</label>
 <Field type='password' name='password'/>
-<ErrorMessage name='password' component='p' />
+<ErrorMessage name='password' component='p'  className="error" />
 <button type='submit'  disabled={!formik.isValid} >Sign Up</button>
 <br/>
 

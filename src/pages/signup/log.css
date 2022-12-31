@@ -5,13 +5,14 @@
    border: 3px solid white;
    background-color: rgba(149, 155, 184, 0.2);
    border-radius: 20px;
-   height: 41%;
+   height: 45%;
    width: 30%;
    padding: 30px 50px;
 }
 .i{
-position: static;
+
 width: 100vw;
+
 }
 .log button{
     text-align: center;
@@ -23,8 +24,8 @@ width: 100vw;
     padding: 8px 25px 8px 25px;
     font-weight: 900;
     margin-top: 25px;
-    margin-left: 38%;
-    width: 25%;
+    margin-left: 33%;
+    width: 35%;
     cursor: pointer; 
 }
 .log button:active{
@@ -36,15 +37,152 @@ width: 100vw;
     background-color: rgba(149, 155, 184, 0.0);
     border-bottom: 2px solid white;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 25px;
     padding: 10px;
+}
+.registr{
+    font-weight: 900;
 }
 .log input:focus{
     outline: none;
     background-color: rgba(149, 155, 184, 0.0);
+}
+.error{
+   font-size: 1em;
+   color: red;
+   font-weight: 900;
+   text-align: center;
 }
 .log label{
     color: white;
 
 }
 
+media screen and (max-width:1200px) {
+    .login{
+        position: absolute;
+        bottom:30%;
+        left: 35%;
+        border: 3px solid white;
+        background-color: rgba(149, 155, 184, 0.2);
+        border-radius: 20px;
+        height: 50%;
+        width: 40%;
+        padding: 10px 50px;
+     }
+        .log button{
+            text-align: center;
+            background-color:rgb(255,89,42);
+            border: none;
+            border-radius: 15%;
+            color: black;
+            box-shadow: 0px 0px 15px 5px rgb(255,89,42) ;
+            padding: 8px 25px 8px 25px;
+            font-weight: 900;
+            margin-top: 25px;
+            margin-left: 25%;
+            width: 55%;
+            cursor: pointer; 
+        }
+
+        .i{
+         width: 100vw;
+       
+            }
+
+
+      
+}
+
+@media screen and (max-width:600px) {
+
+    .login{
+        position: absolute;
+        bottom:30%;
+        left: 22%;
+        border: 3px solid white;
+        background-color: rgba(149, 155, 184, 0.2);
+        border-radius: 20px;
+        height: 50%;
+        width: 60%;
+        padding: 50px 20px;
+     }
+     .log button{
+            text-align: center;
+            background-color:rgb(255,89,42);
+            border: none;
+            border-radius: 15%;
+            color: black;
+        
+            font-weight: 900;
+            margin-top: 25px;
+            margin-left: 25%;
+            width: 50%;
+            cursor: pointer; 
+     }
+.login .account{
+    font-size: 1.1em;
+    width: 95%;
+}
+     .i{
+   width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+     
+        }
+}
+
+@media screen and (max-width:450px) {
+ .login{
+        position: absolute;
+        bottom:30%;
+        left: 13%;
+        border: 3px solid white;
+        background-color: rgba(149, 155, 184, 0.2);
+        border-radius: 20px;
+        height: 48%;
+        width: 80%;
+        padding: 50px 12px;
+     }
+     .login input{
+        border: none;
+        background-color: rgba(149, 155, 184, 0.0);
+        border-bottom: 2px solid white;
+        width: 90%;
+
+
+     
+        padding: 10px;
+    }
+     .login input{
+        border: none;
+        background-color: rgba(149, 155, 184, 0.0);
+        border-bottom: 2px solid white;
+ 
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .login .account{
+        font-size: 1.1em;
+        width: 95%;
+        height: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .login{
+        position: absolute;
+        bottom:26%;
+        left: 13%;
+        border: 3px solid white;
+        background-color: rgba(149, 155, 184, 0.2);
+        border-radius: 20px;
+        height: 52%;
+        width: 80%;
+        padding: 20px 12px;
+     }
+
+}

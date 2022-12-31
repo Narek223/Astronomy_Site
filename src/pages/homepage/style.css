@@ -43,9 +43,9 @@ left: 19%;
     margin-left: 3px;
 }
 .im1{
- width: 100%;
     height:100%;
-
+    overflow: hidden;
+   
 }
 
 @media screen and (max-width:1200px) {
@@ -106,22 +106,20 @@ margin-left: 50px;
         display: none;
      }
 
-    .im1{
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        overflow: hidden;
-    }
+  
 }
 @media screen and (max-width:393px) {
     .one {
         display: flex;
         position: absolute;
         top: 30%;
-        left:55vw;
+        left:45vw;
         align-items: center;
         flex-direction: column;
         }
-   
+   .im1{
+overflow: hidden;
+width: 100vw;
+   }
 
 }
