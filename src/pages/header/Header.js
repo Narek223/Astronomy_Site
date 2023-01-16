@@ -1,8 +1,8 @@
 import React,{useState,useEffect ,useRef} from 'react'
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import './style.css'
-import {FaAlignJustify, FaLaptopHouse,FaTimes}  from 'react-icons/fa';
-
+import {FaAlignJustify,FaTimes}  from 'react-icons/fa';
+import Profil from '../Profil_page/Profil';
 
 
 export  function Header() {
@@ -26,32 +26,42 @@ useEffect(()=>{
   }
 },[ref])
 
- 
+
+
+const active = ({ isActive }) => {
+  return  isActive ? "active" : "not_active";
+}
 
   return (
     <div >
+     
           <header>
-          <Link className='logo' onClick={home}  to='/' style={{ textDecoration:'none'}}>     
+          <NavLink  className='logo' onClick={home}  to='/' style={{ textDecoration:'none'}}>     
                 <h1>DHRUVA</h1>
                 <p>ASTRONOMY CLUB</p>  
-            </Link>
+            </NavLink >
             <hr/>
             <p className='respons' onClick={toggle}>{res===true ?< FaTimes className='x'/>:<FaAlignJustify/>}</p>
             <hr/>
             <nav className={`btn1 ${res===true?'resp':'btn5'}`}  >
                <ul  ref={ref}>
                
-               <Link to='/Discover' onClick={toggle}  style={{color:'white',textDecoration:'none'  }}><li>Discover</li></Link> 
+               <NavLink exact to='/Discover' onClick={toggle}  className={active}><li>Discover</li></NavLink > 
                <hr/>
-               <Link to='/quiz' onClick={toggle} style={{color:'white',textDecoration:'none'  }}><li>Quiz</li></Link> 
+               <NavLink exact to='/quiz' onClick={toggle}  className={active}><li>Quiz</li></NavLink > 
                <hr/>
-                <Link to='/about' onClick={toggle} style={{color:'white',textDecoration:'none'  }}  ><li>About</li></Link>
+                <NavLink exact to='/about' onClick={toggle} className={active}><li>About</li></NavLink >
                 <hr/>
-                <Link to='/sign' onClick={toggle}  style={{ color:'white',textDecoration:'none'  }}><li >Sign up</li></Link>
+                <NavLink exact to='/sign' onClick={toggle} className={active}><li >Sign up</li></NavLink >
              
+             
+          
                </ul>
+           
                <hr/>
+               
             </nav>
+{<Profil/>}
          </header>   
          </div>
   )

@@ -1,16 +1,16 @@
 import React,{useState} from 'react'
-import moon from '../../img/Custom Background - 1.jpg'
+import moon from '../../img/Custom Background - 1 (1).png'
 import './style.css'
-import {Header} from '../header/Header'
+import {Disc} from '../Discover/Disc'
 
 
 export  function Home () {
 
-
   return (
+    
 <div className='conteiner'>
 <img src={moon} className='im1'/>
- <Header/>
+ 
      <section className='one'>
       <h1>Learn</h1>
       <ul>
@@ -21,9 +21,11 @@ export  function Home () {
         <li>Life</li>
       </ul>
       <h1>and Cosmos</h1>  
+  
       </section> 
-    
+
     </div>
-       
+ 
+  
   )
 }

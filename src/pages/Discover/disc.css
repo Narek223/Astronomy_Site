@@ -28,12 +28,19 @@ body{
 }
 .mek p{
 
-    font-size: 25px;
+    font-size: 24px;
 }
 .hr{
     color:white;
     text-decoration: none;
     font-size: 2em;
+}
+.hr:hover{
+    text-decoration: underline;
+    color: rgb(144, 95, 190);
+}
+.logo_two{
+    object-fit: cover;
 }
 .button_two{
     color: white;
@@ -49,16 +56,25 @@ body{
      padding: 20px 20px;
      margin: 5px;
 }
+
+.button_one:hover{
+    animation-delay: 0.2s;
+    transform: scale(1.1);
+    animation-duration: 2s;
+}
 .button_one:active{
     transform: scale(0.7);
-
-    transition-duration: 2s;
+    animation-duration: 2s;
 }
-
+.button_two:hover{
+    animation-delay: 0.2s;
+    transform: scale(1.1);
+    animation-duration: 2s;
+}
 .button_two:active{
     transform: scale(0.7);
-    transition-duration: 2s;
-    
+    animation-duration: 2s;
+   
 }
 .button_one{
     display: block;

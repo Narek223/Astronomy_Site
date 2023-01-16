@@ -13,6 +13,7 @@
    height: 54%;
    width: 60%;
    overflow: hidden;
+
 }
 .two {
     height: 34%;
@@ -50,6 +51,11 @@
     border-radius: 15%;
     padding: 10px 15px;
     margin: 5px;
+}
+.btn2 button:active{
+transform: scale(0.8);
+animation-direction: 1s;
+
 }
 .btn2{
     position: absolute;
@@ -146,7 +152,7 @@ grid-area:'erek';
   
     .btn2{
         position: absolute;
-        left: 72%;
+        left: 75%;
         bottom: 90%;
     }
     .two {
@@ -230,16 +236,26 @@ grid-area:'erek';
     }
 }
 @media screen and (max-width:393px) {
+    .two p{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 88%;
+        font-size:1.2em;
+        margin-top: 25px;
+    }
   
     .btn2{
         position: absolute;
-        left: 50%;
+        left: 52%;
         bottom: 90%;
     }
     .quiz{
         position:absolute;
         top: 20%;
-        left: 5%;
+        left: 3%;
         border: 3px solid white;
         background-color: rgba(149, 155, 184, 0.4);
         border-radius: 20px;
@@ -247,10 +263,16 @@ grid-area:'erek';
         width: 95vw;
         overflow: hidden;
      }
+ 
 }
 
 
-@media screen and (max-height:750px) {
+@media screen and (max-height:735px) {
+    .two p{
+      
+        width: 95%;
+       
+    }
     .btn2{
         position: absolute;
         left: 50%;
@@ -258,8 +280,8 @@ grid-area:'erek';
     }
     .quiz{
         position:absolute;
-        top: 15%;
-        left: 8%;
+        top: 18%;
+        left: 6%;
         border: 3px solid white;
         background-color: rgba(149, 155, 184, 0.4);
         border-radius: 20px;

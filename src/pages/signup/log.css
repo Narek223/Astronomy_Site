@@ -58,10 +58,17 @@ width: 100vw;
 
 }
 
-media screen and (max-width:1200px) {
+@media screen and (max-width:1200px) {
+
+    .i{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    
     .login{
         position: absolute;
-        bottom:30%;
+        bottom:25%;
         left: 35%;
         border: 3px solid white;
         background-color: rgba(149, 155, 184, 0.2);
@@ -85,11 +92,7 @@ media screen and (max-width:1200px) {
             cursor: pointer; 
         }
 
-        .i{
-         width: 100vw;
-       
-            }
-
+    
 
       
 }

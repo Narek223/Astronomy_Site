@@ -1,3 +1,6 @@
+
+
+
 export const questions =[
 
     {question:'Who was the first person in space?',answers:['Yuri Gagarin','Tim Peake','Sunita Williams','Helen Sharman'],correctanswer:0},
@@ -27,7 +30,11 @@ export const questions =[
     {question:'Which planet in the Solar System is furthest from the Sun?',answers:['Neptune','Uranus','Mercury','Jupiter'],correctanswer:0}
   
 ]
+
   questions.sort((a, b) => 0.5 - Math.random());
+
+
+
   questions.length=20
 
 

@@ -43,6 +43,7 @@ left: 19%;
     margin-left: 3px;
 }
 .im1{
+    width: 100vw;
     height:100%;
     overflow: hidden;
    
@@ -93,8 +94,8 @@ margin-left: 50px;
     .one {
         display: flex;
         position: absolute;
-        top: 30%;
-        left: 32%;
+        top: 18%;
+        left: 33%;
         align-items: center;
         flex-direction: column;
         }
@@ -108,12 +109,22 @@ margin-left: 50px;
 
   
 }
+@media screen and (max-width:450px) {
+    .one {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        align-items: center;
+        flex-direction: column;
+        }
+}
 @media screen and (max-width:393px) {
     .one {
         display: flex;
         position: absolute;
         top: 30%;
-        left:45vw;
+        left:38vw;
         align-items: center;
         flex-direction: column;
         }

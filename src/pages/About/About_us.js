@@ -6,6 +6,7 @@ import dhrova from '../../img/Dhruva-Final.png';
 export function About_us() {
   return (
     <div>
+      
 <img src={stars} className='star'/>
 <section className='one'>
 <p >ABOUT US</p>

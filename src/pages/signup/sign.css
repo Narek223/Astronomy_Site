@@ -4,13 +4,13 @@
 .reg{
     display: flex;
     position: absolute;
-   bottom:25%;
+   bottom:18%;
    left: 63%;
    border: 3px solid white;
    background-color: rgba(149, 155, 184, 0.2);
    border-radius: 20px;
    flex-direction: column;
-   height: 52%;
+   height: 60%;
    width: 30%;
    justify-content: flex-start; 
    padding: 0 50px; 
@@ -45,8 +45,8 @@
     padding: 8px 25px 8px 25px;
     font-weight: 900;
     margin-top: 25px;
-    margin-left: 38%;
-    width: 25%;
+    margin-left: 35%;
+    width: 30%;
     cursor: pointer;
 }
 .reg button:active{
@@ -114,10 +114,11 @@ font-weight:900;
         object-fit: cover;
     }
     .reg button{
-        padding: 10px 60px 10px 60px;
-        margin-left: 65px;
+        padding: 10px 30px 10px 30px;
+        margin-left: 21%;
         font-size:small;
         width: 55%;
+        text-align: center;
     }
     .reg{ 
        position: absolute;
@@ -150,8 +151,8 @@ font-weight:900;
     .reg{   
         position: absolute;
        bottom:10%;
-       left: 20%;
-       height: 70%;
+       left: 29%;
+       height: 60%;
        width: 68%; 
     }
     .lo{
@@ -210,7 +211,6 @@ font-weight:900;
     }
 
 }
-
 @media screen  and (max-width:750px){
     .reg{
         height: 73%;
@@ -220,5 +220,4 @@ font-weight:900;
         left: 7%;
  
      }
- 
 }

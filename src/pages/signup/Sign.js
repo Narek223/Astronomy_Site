@@ -25,19 +25,21 @@ const onSubmit = values=>{
   registerHandler(values)
   setstate(values)
 
+
+
 }
+console.log(status)
 const initialValues = {
   name:"",
   email: '',
   password: '',
 }
 const validationSchema = Yup.object({
-  name:Yup.string().min(4).max(9).required('required'),
-  email:Yup.string().email(" ").matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/," ").required('required'),
- password:Yup.string().matches(/[A-Z]?/g, " ").matches(/[#$^@_-]{1}/g, " ").matches(/[0-9]/g, " ").min(8).max(14).required('required')
+  name:Yup.string().required('Please enter your Username').matches(/^[A-Z]/g,"username must start with capital letter").min(4,'Minimum username length 4').max(8,'Maximum username length 8'),
+  email:Yup.string().email("This isn't not correct email format").matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/," ").required('Please enter your email'),
+ password:Yup.string().required('Please enter your password').matches(/[A-Z]{1}/g,"password must contein capital letter").matches(/[#$^@_-]{1}/g,"Password must contain one symbol").matches(/[0-9]/g,"Password must contain numbers").min(8,'Minimum password length 8').max(14,'Maximum password length 14')
 })
 useEffect(()=>{
-
   return ()=>{
     if(source){
     console.log(  source.cancel('axios get canseled '))
@@ -51,11 +53,11 @@ async  function registerHandler(values) {
   await axios.post(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`,data,{cancelToken: source.token})
   .then(response => console.log(setstatus(response.status)))
   .catch(err => console.log(err))
-  
 }
-
+if(status===200){
+  window.localStorage.setItem('name',JSON.stringify(state))
+}
   return (
-   
 <div>
 { status==200?(
     <Cont.Provider value ={state}>
@@ -69,7 +71,7 @@ async  function registerHandler(values) {
  {formik=>{
   setstate(formik.values)
 return(
-<Form>
+<Form autoComplete='off'>
     <img  src={cosmonaut}  className='cls'/> 
 <section className='sign'>
   <div className='reg'>
@@ -87,7 +89,6 @@ return(
 <ErrorMessage name='password' component='p'  className="error" />
 <button type='submit'  disabled={!formik.isValid} >Sign Up</button>
 <br/>
-
 </div>
 <img src={dhrova} className='dh'/>
 <div className='lo'>

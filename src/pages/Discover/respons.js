@@ -1,8 +1,8 @@
 import site_1 from '../../img/1_1554887961-1024x518.jpg';
 import site_2 from '../../img/8_1554887948-1024x518.jpg';
 import site_3 from '../../img/34_1554887966-1024x518.jpg';
-import site_4 from '../../img/hubblesite.png';
-import site_5 from '../../img/stellarium.png';
+import site_4 from '../../img/hubblesite.webp';
+import site_5 from '../../img/stellarium.webp';
 
 export const rrespons =[
     {h1:'1.If The Moon Were Only 1 Pixel',img:site_1,p: 'Most people are absolutely not standing by how big the cosmos is. Its hardly huge. The site If The Moon Were Only 1 Pixel clearly shows the true size of the solar system. The basis of the scale of the diameter of the servant of the moon - here it corresponds to 1 pixel.Click on the button in the upper right corner of the screen and the solar system will begin to switch in front of you at the speed of light. On a space scale, this is very slow. To Mars at this speed you have to fly more than 12 minutes.',href:'https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html'},
